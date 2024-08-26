@@ -171,3 +171,6 @@ pb[11].addEventListener("click", ()=>{
   q12("길동", hiFn);
   q12("둘리", byeFn);
 });
+
+
+console.log("git hub 테스트하려고 쓴 것임")
