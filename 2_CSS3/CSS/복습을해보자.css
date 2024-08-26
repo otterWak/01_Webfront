@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+*{font-family:'MaplestoryOTFBold';}
+
+strong{background-color: skyblue;}
+span{background-color: bisque;}
+
+#id-test1{background-color: red;}
+#id-test2{background-color: orange;}
+#id-test3{background-color: yellow;}
+#id-test4{background-color: green;}
+#id-test5{background-color: blue;}
+#id-test6{background-color: darkblue;}
+#id-test7{background-color: purple;}

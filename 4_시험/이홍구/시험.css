@@ -1,0 +1,57 @@
+/* *{
+  border: 0.5px solid gray;
+} */
+
+#div0{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#div1, #div2, #div3{
+  display: flex;
+  width: 600px;
+  margin: 10px;
+}
+
+#div1>div{
+  flex-basis: 50%;
+}
+#div1>:last-child{
+  flex-basis: 50%;
+}
+
+#div4, #div5, #div6{
+  display: flex;
+  width: 600px;
+  margin: 10px;
+}
+
+#div6>input{
+  width: 456px;
+}
+
+#div2>div{
+  flex-basis: 50%;
+}
+#div2>:last-child{
+  flex-basis: 50%;
+}
+
+#div3>div{
+  flex-basis: 50%;
+}
+#div3>:last-child{
+  flex-basis: 50%;
+}
+
+#result-btn{
+  margin: 10px;
+}
+
+#result{
+  border: 2px solid black;
+  display: flex;
+}
+

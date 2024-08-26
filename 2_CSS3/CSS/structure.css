@@ -1,0 +1,318 @@
+*{
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body{margin: 0;}
+
+
+/* 메인태그 */
+main{
+  width: 1140px;
+  margin: auto;}
+
+/* header */
+/* header 영역에 높이 + flex box 속성 부여 */
+header{
+  height: 200px;
+  display: flex;
+}
+
+/* 로고, 빈 부분에 각각 공간 15% 부여 */
+header > section:nth-of-type(1),
+header > section:nth-of-type(3) {
+  flex-basis: 15%;
+}
+
+/* 검색창 영역 공간 부여 70% + flex속성 부여 + 요소 가운데 정렬*/
+header > section:nth-of-type(2){
+  flex-basis: 70%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 로고영역 부분 */
+/* 로고 크기 고정 */
+#home-logo{
+  width: 120px;
+}
+
+/* 로고 영역 flex 속성 부여 + 요소 가운데 정렬 */
+header > section:nth-of-type(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 검색창 영역 */
+
+/* 검색영역 폭 지정 */
+.search-area{
+  width: 500px;
+}
+
+/* 검색창 영역 테두리, 폭 부여 + flex 속성 부여 */
+/* 후손 선택: 띄어쓰기 */
+.search-area fieldset{
+  border: 2px solid #455ba8;
+  border-radius: 5px;
+  margin: 0;
+  padding: 2px;
+  display: flex;
+}
+
+/* 검색란 공간 92% 부여 + 글씨 크기 조정 + 테두리&외곽선 제거 */
+#query{
+  flex-basis: 92%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: none; /* 0 */
+  outline: none; /* 0 */
+  /* outline : input 태그에 포커스가 맞춰졌을 때
+    이를 표현하기 위한 바깥선
+  */
+}
+
+/* 버튼 공간 8%부여 + 배경&테두리 제거 + 아이콘 디자인 + 커서 변환 부여 */
+#search-btn{
+  flex-basis: 8%;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #455ba8;
+  cursor: pointer;
+}
+
+/* nav영역 */
+/* nav 높이 부여 + 아랫 줄 생성 + 상단 고정 */
+nav{
+  height: 50px;
+  border-bottom: 2px solid black;
+  position: sticky;
+  /* 
+    sticky : 특정 스크롤 위치에 도달했을 때
+            요소가 고정되는 효과를 주는데 사용
+            평소에는 HTML 상 자신의 원래 위치에 위치
+            요소가 특정 위치에 도달 시 fixed로 변함
+
+            top, bottom, left, right 속성이
+            필수로 작성이 되어야 함
+            -> 도달 시 어느 위치에 부착해서 고정할지
+              정해야 하기 때문
+  */
+  top: 0;
+  background-color: white;
+}
+
+/* 목록 표기법 제거 + flex(inline) 속성 부여 + 공백 없앰 + 높이 설정*/
+nav > ul{
+  /* list-style : 목록 표기법 제거(ul/ol 태그 사용) */
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* 각 목록 고정폭 부여 */
+nav li{
+  flex-basis: 150px;
+}
+
+/* 목록 글씨 밑줄 제거 + 글씨 디자인 + block속성 부여 + 가운데 정렬 + 반응속성 부여 */
+nav a {
+  text-decoration: none; /* a태그의 밑줄 제거 */
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  border: none;
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+
+  transition-duration: 0.2s;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* 목록 반응 속성 부여 */
+nav a:hover{
+  background-color: #455ba8;
+  color: white;
+}
+
+/* 영역 높이 부여 + flex속성 부여 */
+.content{
+  height: 800px;
+  display: flex;
+}
+
+/* 빈 영역 공간 70% 부여 */
+.content-1{
+  flex-basis: 70%;
+}
+
+/* 로그인 영역 공간 30% 부여 */
+.content-2{
+  flex-basis: 30%;
+}
+
+
+/* login 스타일 */
+/* 로그인 영역 높이&위치 설정 + flex 속성 부여 + 요소 정렬 */
+form[name="login-form"]{
+  height: 130px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#id-pw-area{
+  border: 1px solid #ddd;
+  flex-basis: 70%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#id-pw-area > section:last-child{
+  flex-basis: 30%;
+}
+
+#id-pw-area > section:first-child{
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#id-pw-area input{
+  border: none;
+  border-right: 1px solid #ddd;
+  outline: none;
+  padding: 5px;
+  flex-basis: 50%;
+}
+
+#id-pw-area input:first-child{
+  border-bottom: 1px solid #ddd;
+}
+
+#id-pw-area input:focus{
+  border: 2px solid #455ba8
+}
+
+#id-pw-area button{
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#id-pw-area button:hover{
+  background-color: #455ba8;
+  color: white;
+}
+
+/* 아이디 저장 */
+form[name="login-form"] > label{
+  flex-basis: 30%;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 회원가입 / ID/PW 찾기 영역 */
+#signup-find-area{
+  margin-left: 10px;
+}
+
+#signup-find-area > a{
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#signup-find-area > span{
+ padding: 0 10px;
+}
+
+/* footer 영역 */
+
+footer{
+  height: 200px;
+  background-color: #a3add342;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p{
+  font-weight: bold;
+}
+
+footer > section > *{
+  font-size: 14px;
+}
+
+footer a{
+  color: black;
+  text-decoration: none;
+}
+
+footer span{
+  padding: 0 10px
+}
+
+/* 반응형 : @media 
+  @ : CSS at-rule, 특정 조건이나 규칙에 따라서
+      스타일을 적용할 수 있게 해주는 CSS명령어
+  @media : 미디어 쿼리 - 특정 조건(ex 화면 크기)에 따라서
+          다른 스타일을 적용할 수 있게 해줌
+*/
+
+@media all and (max-width: 767px){
+  /* 반응형 모바일 기준 
+    해상도 767px 이하면 이 중괄호 내에 작성된 css코드를 적용해라
+  */
+  main{
+    width: 100vw; /* vw : viewport width - 디바이스의 너비 전체*/
+  }
+  header{
+    display: none;
+  }
+  nav{
+    width: 100%;
+    border-bottom: none;
+    height: auto;
+  }
+
+  nav > ul{
+    flex-direction: column;
+  }
+
+  nav li {
+    flex-basis: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+
+  footer > *{
+    font-size: 12px;
+  }
+
+  .content-2{
+    padding: 20px;
+  }
+}
+
+/* 태블릿 기준 */
+@media all and (min-width: 768px) and (max-width: 1023px){
+  /* 스타일 css 코드 입력 */
+}

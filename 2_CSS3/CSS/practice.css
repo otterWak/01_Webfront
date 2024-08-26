@@ -1,0 +1,179 @@
+div{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* 문제 1 */
+.container-1{
+    /* 가장 바깥쪽 부모 */
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.header-1, .footer-1{
+    background-color: gray;
+    flex-basis: 20%;
+}
+
+.body-1{
+    /* 
+    body1-item-1,2,3의 부모이면서
+    container-1의 자식
+    */
+    flex-basis: 60%; /* 자식 속성 */
+    display: flex; /* 부모 전용 속성 */
+    /* flex-direction: row; */
+}
+
+.body1-item-1{
+    flex-basis: 30%;
+    background-color: aqua;
+}
+
+.body1-item-2{
+    flex-basis: 50%;
+    background-color: tomato;
+}
+
+.body1-item-3{
+    flex-basis: 20%;
+    background-color: bisque;
+}
+
+
+/* 문제2 */
+
+.container-2{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.header-2{
+    flex-basis: 20%;
+    background-color: red;
+}
+
+.footer-2{
+    flex-basis: 80%;
+    display: flex;
+}
+
+.foot2son1{
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.foot2son2{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.foot2son21{
+    flex-basis: 80%;
+    background-color: yellowgreen;
+}
+
+.foot2son22{
+    flex-basis: 20%;
+    background-color: blue;
+}
+
+
+/* 문제3 */
+.container-3{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.header-3{
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.body-3{
+    flex-basis: 70%;
+    display: flex;
+}
+
+.bd3son1{
+    flex-basis: 30%;
+    background-color: skyblue;
+}
+
+.bd3son2{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bd3gc1{
+    flex-basis: 50%;
+    display: flex;
+}
+
+.bd3gc2{
+    flex-basis: 50%;
+    background-color: purple;
+}
+
+.bd3ggc1{
+    flex-basis: 70%;
+    background-color: aqua;
+}
+
+.bd3ggc2{
+    flex-basis: 30%;
+    background-color: red;
+}
+
+/* 문제4 */
+.container-4{display: flex; width: 800px; height: 500px; flex-direction: column; }
+.header-4, .footer-4{flex-basis: 20%; background-color: green;}
+.body-4{flex-basis: 60%; display: flex;}
+.bd4son1{flex-basis: 30%; background-color: yellow;}
+
+.bd4son2{flex-basis: 70%; display: flex; flex-direction: column; background-color: orange;}
+.bd4gc1{flex-basis: 50%; border: none;}
+.bd4gc2{flex-basis: 50%; border: none; display: flex; justify-content: space-between;}
+.bd4ggc1{flex-basis: 30%; background-color: red; }
+.bd4ggc2{flex-basis: 30%; background-color: red; }
+.bd4ggc3{flex-basis: 30%; background-color: red; }
+
+
+
+/* 문제5 */
+.container-5{display: flex; width: 800px; height: 500px; flex-direction: column; }
+
+/* 헤드 */
+.header-5{flex-basis: 30%; display: flex;}
+
+.headerson1{flex-basis: 20%; background-color: yellow;}
+.headerson2, .headerson3{flex-basis: 40%; background-color: yellow;}
+
+/* 바디 */
+.body-5{flex-basis: 70%; display: flex;}
+/* 바디1 */
+.bdson51{flex-basis: 30%; display: flex; flex-direction: column;}
+.bdson511, .bdson512, .bdson513{flex-basis: calc(100% / 3); background-color: skyblue;}
+/* 바디2 */
+.bdson52{flex-basis: 15%; background-color: pink;}
+/* 바디3 */
+.bdson53{flex-basis: 40%; display: flex; flex-direction: column;}
+.bdson531{flex-basis: 50%; background-color: orange;}
+.bdson532{flex-basis: 50%; display: flex;}
+.bdson5321{flex-basis: 50%; display: flex; flex-direction: column;}
+.bdson53211{flex-basis: 50%; background-color: green;}
+.bdson53212{flex-basis: 50%; background-color: green;}
+.bdson5322{flex-basis: 50%; background-color: red;}
+/* 바디4 */
+.bdson54{flex-basis: 15%; display: flex; flex-direction: column;}
+.bdson541, .bdson543{flex-basis: 20%; background-color: pink;}
+.bdson542{flex-basis: 60%; background-color: pink;}

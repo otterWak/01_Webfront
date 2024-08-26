@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>10_입력연습문제</title>
+    </head>
+    <body>
+        <a href="https://web.dominos.co.kr/gate">
+          <img width="70%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoXpEQwGC1wxGUBLwTJJ5I5q-fJASHq1ACsA&usqp=CAU">
+        </a>
+        <br>
+        고객명 : <input type="text" max="4"> <br>
+        전화번호 : <input type="tel"> <br>
+        E-mail : <input type="email"> <br>
+        피자선택 : 
+        <select name="피자를 선택하세요">
+          <option>피자를 선택하세요</option>
+          <option>맛있는피자</option>
+        </select>
+
+
+        <form>
+          <fieldset>
+            <legend>피자 사이즈</legend>
+            <label>
+              <input type="radio" name="pizzasize" id="smallsize"> Small
+            </label> <br><br>
+            <label>
+              <input type="radio" name="pizzasize" id="midiumsize"> Medium
+            </label> <br><br>
+            <label>
+              <input type="radio" name="pizzasize" id="largesize"> Large
+            </label> <br><br>
+          </fieldset>
+        </form>
+       
+        <form>
+          <fieldset>
+            <legend>토핑 선택</legend>
+            <label>
+                <input type="checkbox" name="topping"> 베이컨
+            </label> <br><br>
+            <label>
+                <input type="checkbox" name="topping"> 치즈
+            </label> <br><br>
+            <label>
+                <input type="checkbox" name="topping"> 양파
+            </label> <br><br>
+            <label>
+                <input type="checkbox" name="topping"> 버섯
+            </label> <br><br>
+          </fieldset>
+        </form> <br>
+
+        희망배송시간 <input type="time"> <br><br>
+
+        배송시요청사항 : <textarea rows="3"></textarea> <br><br>
+
+        <button>추출하기</button>
+        
+        <br><br>
+        
+        <a href="https://web.dominos.co.kr/event/viewHtml?seq=2163&gubun=E0200">
+            <img width="70%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb_ZGAnUw1TDqDenmQGthvwXuDHhXjQuWaNQ&usqp=CAU">
+        </a>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+body{
+  color: #eef7cd;
+  background-color: #070829;
+  margin: 20px;
+}
+
+hr{
+  color: #eef7cd;
+  border-color: #eef7cd;
+}
+
+ol{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+pre{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#normal-button, #wak-button{
+  background-color: #070829;
+  color: #eef7cd;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+hr{
+  color: #eef7cd;
+}
+
+button{
+  cursor: pointer;
+  background-color: #eef7cd;
+  color: #070829;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+input{
+  background-color: #eef7cd;
+  color: #070829;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+#result1, #result2, #result3{
+  margin-top: 0px;
+}

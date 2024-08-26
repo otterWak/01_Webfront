@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body{
+  margin: 10px 0 0 0;
+}
+
+/* 위에 바 */
+#container{
+  height: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.fa-solid, .fa-brands, .fa-regular{
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+/* 로고 영역 */
+#start{
+  display: flex;
+  flex-basis: 20%;
+  height: 100%;
+  align-items: center;
+}
+
+#start > button{
+  height: 100%;
+  font-size: 20px;
+  flex-basis: 30%;
+}
+
+#start > label{
+  display: flex;
+  flex-basis: 70%;
+  height: 100%;
+  align-items: center;
+}
+
+.fa-youtube{
+  color: red;
+  font-size: 33px;
+  text-decoration: none;
+}
+
+.text-youtube{
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* 검색 영역 */
+#center{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form[name="search-form"]{
+  display: flex;
+  flex-basis: 100%;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+}
+
+form[name="search-form"] > fieldset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 95%;
+  border-radius: 30px;
+  padding: none;
+  margin: 30px;
+  height: 100%;
+}
+
+form[name="search-form"] > button{
+  flex-basis: 20%;
+}
+
+#search-for{
+  display: block;
+  height: 100%;
+  margin-top: 5px;
+  padding : 5px;
+  font-size: 18px;
+  flex-basis: 80%;
+  border: none;
+  outline: none;
+}
+
+.fa-magnifying-glass{
+  font-size: 20px;
+}
+.fa-microphone{
+  font-size: 20px;
+  flex-basis: 5%;
+}
+
+/* 우측 상단 영역 */
+#end{
+  flex-basis: 20%;
+  display: flex;
+  height: 100%;
+  justify-content: right;
+}
+
+.fa-video, .fa-bell, .fa-user{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+/* 메인영역 */
+
+/* main1 */
+
+main{
+  margin: 0;
+  display: flex;
+}
+
+#main-1{
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 800px;
+}
+
+#main-1 > div:first-child{
+  display: flex;
+  flex-basis: 100%;
+  height: 400px;
+}
+
+#main-1 iframe{
+  display: block;
+  width: 100%;
+  margin: 0px;
+  height: 400px;
+}
+
+#main-1 > h3{
+  font-size: 20px;
+}
+
+#main-2{
+  flex-basis: 30%;
+}

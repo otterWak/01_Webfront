@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaplestoryOTFBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{font-family: 'BookkMyungjo-Bd';}
+
+body{
+  color: #eef7cd;
+  background-color: #070829;
+  margin: 20px;
+}
+
+hr{
+  color: #eef7cd;
+  border-color: #eef7cd;
+}
+
+
+pre{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button{
+  cursor: pointer;
+  background-color: #eef7cd;
+  color: #070829;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'MaplestoryOTFBold';
+  margin: 5px;
+}
+
+input{
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+input:focus{
+ outline: 1px solid gold;
+ border: 1px solid gold;
+}
+
+.cls-test {
+  width: 400px;
+  height: 150px;
+  border: 1px solid #eef7cd;
+}
+
+#name-div {
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* target-div 속성의 값이 css-div인 요소 선택 */
+[target-div="css-div"] {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+/* [target-div="css-div"] 의 자식 div */
+[target-div="css-div"] > div {
+  height: 50%;
+}
+
+/* [target-div="css-div"] 의 자식 div 중 첫번째 자식*/
+[target-div="css-div"] > div:first-child {
+  background-color: pink;
+}
+
+
+/* [target-div="css-div"] 의 자식 div 중 마지막 자식*/
+[target-div="css-div"] > div:last-child {
+  background-color: yellow;
+}
+
+
+/* 카카오톡 채팅 화면 만들기 */
+
+.chatting, .chatting * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* 전체 감싸는 요소 */
+.chatting {
+  width: 360px;
+  border: 1px solid #eef7cd;
+  margin: 50px 20px;
+}
+
+.chatting.focus{
+  border: 2px solid #eef7cd;
+}
+
+/* 채팅 출력 부분 */
+#chatting-bg {
+  background-color: rgb(178, 199, 217);
+  width: 100%;
+  height: 400px;
+
+  /* overflow : 내부 내용이 감싸는 요소를 넘었을 때 처리하는 속성 */
+  /* auto : 넘치기 전 -> 변화없음 , 넘친 후 -> 스크롤 발생 */
+  /* hidden : 넘친 부분을 안보이게끔 처리함 */
+  overflow: auto;
+}
+
+/* 채팅 내용 */
+#chatting-bg > p {
+  margin: 20px 10px;
+  text-align: right;
+}
+
+#chatting-bg > p > span {
+  background-color: rgb(254, 234, 51);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* 입력 부분 */
+#chatting-input {
+  width: 100%;
+  display: flex;
+  height: 22px;
+}
+
+#chatting-input > input {
+  height: 100%;
+  width: 80%;
+  outline: 0;
+  padding-left: 5px;
+}
+
+#chatting-input > button {
+  height: 100%;
+  width: 20%;
+}
+
+div>div{
+  color: #070829;
+}
+
+#name-div{
+  border: 1px solid #eef7cd;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#chatting-bg > p > span{
+  font-family: 'MaplestoryOTFBold';
+}

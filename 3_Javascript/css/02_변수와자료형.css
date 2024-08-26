@@ -1,0 +1,46 @@
+body{
+  color: #eef7cd;
+  background-color: #070829;
+  margin: 20px;
+}
+
+hr{
+  color: #eef7cd;
+}
+
+ol{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+pre{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#normal-button, #wak-button{
+  background-color: #070829;
+  color: #eef7cd;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+table{
+  border-top: 2px solid #eef7cd;
+  border-bottom: 2px solid #eef7cd;
+  border-collapse: collapse;
+}
+
+th{
+  border-bottom: 1.5px solid #eef7cd;
+}
+
+td{
+  border-bottom: 0.5px dotted #eef7cd;
+}
+
+td, th{
+  text-align: center;
+  width: 200px;
+}

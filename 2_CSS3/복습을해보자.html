@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>복습을해보자</title>
+
+        <link href="./CSS/복습을해보자.css" rel="stylesheet">
+    </head>
+    <body>
+        <h3>CSS(Cascading Style Sheets)</h3>
+        <pre>
+        마크업 언어가 실제로 화면에 표시되는 방법을 기술하는 언어
+        </pre>
+        <hr>
+        <h3>CSS Selector(선택자)</h3>
+        <pre>
+        현재 html문서 내에서 특정한 요소를 선택하는 문자 또는 문자열
+        == 스타일을 적용하고자 하는 요소를 선택하는 방법
+        </pre>
+
+        <hr>
+
+        <h3>태그 선택자</h3>
+        <pre>
+        현재 HTML 문서 내에 같은 태그를 선택하는 선택자
+        [작성법] 태그명{css코드;}
+        </pre>
+
+        <div style="border: 3px solid red;">
+            <strong>strong 태그에 작성된 내용</strong><br>
+            <span>span 태그에 작성된 내용</span>
+
+            <ul>
+                <li>
+                    <strong>strong 태그에 작성된 내용</strong>
+                </li>
+                <li>
+                    <span>span 태그에 작성된 내용</span>
+                </li>
+            </ul>
+        </div>
+        
+        <hr>
+
+        <h3>id 선택자</h3>
+        <pre>
+        HTML 문서 내에서 id 속성값이 일치하는 요소를 선택하는 선택자
+        [작성법]
+        #id속성값{css코드;}
+        </pre>
+        <ol>
+            <li id="id-test1">id 선택자 테스트 1</li>
+            <li id="id-test2">id 선택자 테스트 2</li>
+            <li id="id-test3">id 선택자 테스트 3</li>
+            <li id="id-test4">id 선택자 테스트 4</li>
+            <li id="id-test5">id 선택자 테스트 5</li>  
+            <li id="id-test6">id 선택자 테스트 6</li>  
+            <li id="id-test7">id 선택자 테스트 7</li>  
+        </ol>
+
+        <hr>
+
+        <h3>class 선택자</h3>
+        <pre>
+        HTML 문서내에서 같은 calss 속성값을 가지는 태그를
+        모두 선택하는 선택자
+        [작성법]
+        .class속성값{css 코드;}
+        </pre>
+        <ul>
+            <li class="class1" aaa>클래스 선택자 테스트</li>
+            <li class="class2">클래스 선택자 테스트</li>
+            <li class="class1">클래스 선택자 테스트</li>
+            <li class="class2" aaa>클래스 선택자 테스트</li>
+            <li class="class1">클래스 선택자 테스트</li>
+        </ul>
+    </body>
+</html>

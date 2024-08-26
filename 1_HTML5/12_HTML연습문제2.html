@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12_HTML연습문제2</title>
+    </head>
+    <body>
+        <form method="get" action="회원가입을축하합니다.html" target="_self">
+            <h1>회원 가입</h1>
+            <fieldset>
+                <legend>필수 입력 정보</legend>
+                
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <td>
+                            <input placeholder="아이디 10글자 이내">
+                        </td>
+                        <td>
+                            <button type="button" id="btn1">중복 확인</button>
+                            <script>
+                                document.getElementById("btn1").addEventListener("click", function(){
+                                    alert("중복된 ID 입니다");
+                                })
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td colspan="2">
+                            <input placeholder="영문,숫자,특수문자 포함 8자 이상" size="30" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호 확인</th>
+                        <td colspan="2">
+                            <input size="30" type="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>
+                            <input>
+                        </td>
+                        <td>
+                            <select>
+                                <option selected>직접입력</option>
+                                <option>@naver.com</option>
+                                <option>@daum.net</option>
+                                <option>@google.com</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>추가 정보</legend>
+
+                프로필 사진
+                <input type="file" id="btn2"></input>
+
+                <br>
+
+                성별  :
+                <label>
+                    <input type="radio" name="gender" checked> 남자
+                </label>
+                <label>
+                    <input type="radio" name="gender"> 여자
+                </label>
+
+                <br><br>
+
+                생년월일 :
+                <input type="date">
+
+                <br><br>
+
+                취미:<br>
+                <label>
+                    <input type="checkbox">야구
+                </label>
+                <label>
+                    <input type="checkbox">농구
+                </label>
+                <label>
+                    <input type="checkbox">축구
+                </label><br>
+                <label>
+                    <input type="checkbox" checked>공부
+                </label>
+                <label>
+                    <input type="checkbox">음악감상
+                </label><br>
+                <label>
+                    <input type="checkbox">기타 <input>
+                </label><br><br>
+
+                자기소개<br>
+                <textarea style="resize: none;" rows="15" cols="60"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button>회원가입</button>
+            <button type="reset">다시입력</button>
+            <a href="http://192.168.50.206:5500/1_HTML5/">
+                <button type="button">이전으로</button>
+            </a>
+        </form>
+    </body>
+</html>
