@@ -174,3 +174,5 @@ pb[11].addEventListener("click", ()=>{
 
 
 console.log("git hub 테스트하려고 쓴 것임")
+
+console.log("git hub 테스트하려고 쓴 것임(집에서)")
